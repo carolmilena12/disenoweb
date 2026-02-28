@@ -12,13 +12,15 @@
         <fieldset>
             <legend>Datos Personales</legend>
             <label for="nombre">Ingrese su nombre:</label>
-            <input type="text" id="nombre" name="nomb"><br><br>
+            <input type="text" id="nombre" name="nomb" required pattern="[A-Za-z]+"><br><br>
             <label for="apellido">Ingrese su apellido:</label>
-            <input type="text" name="apellido" id="apellido"><br><br>
+            <input type="text" name="apellido" id="apellido" required><br><br>
             <label for="nacimiento">Ingrese su fecha de nacimiento:</label>
             <input type="date" id="nacimiento" name="nacimiento"><br><br>
             <label for="color">Seleccione un color:</label>
             <input type="color" id="color"><br><br>
+            <input type="password" maxlength="8">
+            <h4>Ingrese su genero:</h4>
             <label for="genero"> Femenino
                 <input type="radio" name="genero" value="femenino">
             </label>
@@ -30,16 +32,36 @@
         <fieldset>
             <legend>Datos de Contacto</legend>
             <label for="ciudad">Seleccione una ciudad</label>
-            <select name="ciudad" id="ciudad">
+            <select name="ciudad" id="ciudad" required>
                 <option value="lpz">La Paz</option>
                 <option value="cbba">Cochabamba</option>
                 <option value="scz">Santa Cruz</option>
-            </select><br>
+                <option value="scz">Shinohata</option>
+                <option value="scz">Riberalta</option>
+            </select><br><br>
+            <label for="direccion" >Ingrese su direccion</label>
+            <textarea name="direccion" id="direccion" cols="50" rows="1"></textarea><br><br>
+
             <label for="correo">Ingrese su correo:</label>
             <input type="email" id="correo" name="correo">
-        </fieldset><br>
+            <label for="telefono" >Ingrese su telefono:</label>
+            <input type="tel" id="telefono" name="telefono" required>
+        </fieldset><br><br>
+        <fieldset>
+            <legend>Areas de Interes</legend>
+            <input type="checkbox" name="interes" value="des_web" id="des_web">
+            <label for="des_web">Desarrollo Web</label>           
+        </fieldset>
         <button type="submit">ENVIAR</button>
 
     </form>
+    <!-- Incrustar paginas  externas dentro de mi pagina -->
+     <section>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/dDnEsbsxxig?si=XWtfKK-GWAaw33A3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+     </section><br><br>
+     <section>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3807.6843313966992!2d-66.14995872522917!3d-17.37891626396362!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x93e375cd802abef9%3A0x9ecc765337a8ac31!2sTECNOLOGICO%20EMI%20COCHABAMBA!5e0!3m2!1ses!2sbo!4v1772319319949!5m2!1ses!2sbo" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+     </section>
+    
 </body>
 </html>
