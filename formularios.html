@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+</head>
+<body>
+    <!-- etique formulario -->
+    <h1>Formulario de Registro</h1>
+    <form action="">
+        <fieldset>
+            <legend>Datos Personales</legend>
+            <label for="nombre">Ingrese su nombre:</label>
+            <input type="text" id="nombre" name="nomb"><br><br>
+            <label for="apellido">Ingrese su apellido:</label>
+            <input type="text" name="apellido" id="apellido"><br><br>
+            <label for="nacimiento">Ingrese su fecha de nacimiento:</label>
+            <input type="date" id="nacimiento" name="nacimiento"><br><br>
+            <label for="color">Seleccione un color:</label>
+            <input type="color" id="color"><br><br>
+            <label for="genero"> Femenino
+                <input type="radio" name="genero" value="femenino">
+            </label>
+            <label for="genero"> Masculino
+                <input type="radio" name="genero" value="masculino">
+            </label>
+            
+        </fieldset>
+        <fieldset>
+            <legend>Datos de Contacto</legend>
+            <label for="ciudad">Seleccione una ciudad</label>
+            <select name="ciudad" id="ciudad">
+                <option value="lpz">La Paz</option>
+                <option value="cbba">Cochabamba</option>
+                <option value="scz">Santa Cruz</option>
+            </select><br>
+            <label for="correo">Ingrese su correo:</label>
+            <input type="email" id="correo" name="correo">
+        </fieldset><br>
+        <button type="submit">ENVIAR</button>
+
+    </form>
+</body>
+</html>
